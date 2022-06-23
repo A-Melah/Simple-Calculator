@@ -40,16 +40,17 @@ function division(num1, num2) {
   alert("Answer = " + (num1 / num2));
 }
 
-userInput = window.prompt(
+let userInput = window.prompt(
   "Pick a calculation to perform\n a for addition\n b for subtraction\n c for multiplication\n d for division"
 );
-if (userInput === "a") {
+let userSelection = userInput.towLoerCase();
+if (userSelection === "a") {
   addition();
-} else if (userInput === "b") {
+} else if (userSelection === "b") {
   subtraction();
-} else if (userInput === "c") {
+} else if (userSelection === "c") {
   multiplication();
-} else if (userInput === "d") {
+} else if (userSelection === "d") {
   division();
 } else {
   alert("Invalid entry!!!\n Please Try Again.");
