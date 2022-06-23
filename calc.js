@@ -43,7 +43,7 @@ function division(num1, num2) {
 let userInput = window.prompt(
   "Pick a calculation to perform\n a for addition\n b for subtraction\n c for multiplication\n d for division"
 );
-let userSelection = userInput.towLoerCase();
+let userSelection = userInput.toLowerCase();
 if (userSelection === "a") {
   addition();
 } else if (userSelection === "b") {
